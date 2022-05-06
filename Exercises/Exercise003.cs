@@ -3,10 +3,14 @@ namespace Exercises
 {
     public class Exercise003
     {
-        // Replace the exception statement below with your code!
-        public string[] IceCreamFlavours => throw new NotImplementedException();
 
-        // Replace the exception statement below with your code!
-        public int IceCreamCode(string iceCreamFlavour) => throw new NotImplementedException();
+        public string[] IceCreamFlavours => new string[6] { "Pistachio", "Raspberry Ripple", "Vanilla", "Mint Chocolate Chip", "Chocolate", "Mango Sorbet" };
+
+        public int IceCreamCode(string iceCreamFlavour) =>
+            iceCreamFlavour == "Mint Chocolate Chip" ? 3 : (
+            iceCreamFlavour == "Mango Sorbet" ? 5 : (
+            iceCreamFlavour == "Raspberry Ripple" ? 1: 0
+            ));
+      
     }
 }

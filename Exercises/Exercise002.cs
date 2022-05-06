@@ -3,16 +3,26 @@ namespace Exercises
 {
     public class Exercise002
     {
-        public bool IsFromManchester(/* Person person */)
+        public bool IsFromManchester(Person person)
         {
-            // Replace the exception statement below with your code!
-            throw new NotImplementedException();
+            // Strat: Code added by Shery
+            if (person.Fromlocation == "Manchester")
+                    return true;
+            else
+                    return false;
+            // End: Code added by Shery
+
         }
 
-        public bool CanWatchFilm(/*Person person, int ageLimit*/)
+        public bool CanWatchFilm(Person person, int ageLimit)
         {
-            // Replace the exception statement below with your code!
-            throw new NotImplementedException();
+            // Strat: Code added by Shery
+            if (ageLimit  < 18)
+                return false;
+            else
+                return true;
+            // End: Code added by Shery
         }
     }
 }
+
